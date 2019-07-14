@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:paddingBottom="6dp">
+    <View
+        style="@style/GrayPartingLineStyle"
+        android:layout_height="1px"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/patient_circle_avatar"
+            android:layout_width="44dp"
+            android:layout_height="44dp"/>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/patient_circle_nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FF1A1A1A"
+                    android:textSize="14sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/patient_circle_medical_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/frame_blue_light"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+
+                <TextView
+                    android:id="@+id/patient_circle_major_symptom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/frame_blue_deep"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="2dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="2dp"
+                    android:text=""
+                    android:textColor="#fff"
+                    android:textSize="10sp"/>
+
+            </LinearLayout>
+
+            <FrameLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/patient_circle_mood"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:scaleType="centerCrop"/>
+
+                <TextView
+                    android:id="@+id/patient_circle_content_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#FF444444"
+                    android:textSize="13sp"/>
+
+            </FrameLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/patient_circle_image1"
+                    android:layout_width="95dp"
+                    android:layout_height="59dp"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:id="@+id/patient_circle_image2"
+                    android:layout_width="95dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="centerCrop"/>
+                <ImageView
+                    android:id="@+id/patient_circle_image3"
+                    android:layout_width="95dp"
+                    android:layout_height="59dp"
+                    android:layout_marginLeft="5dp"
+                    android:scaleType="centerCrop"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="7dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/patient_circle_distance_time"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textColor="#FF444444"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/patient_circle_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_more"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

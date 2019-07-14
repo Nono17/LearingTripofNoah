@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_center_shape"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/gender_male"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="21dp"
+        android:gravity="center_vertical"
+        android:text="男"
+        android:textColor="@color/product_detail_common"
+        android:textSize="14sp" />
+    <View
+        style="@style/GrayPartingLineStyle"/>
+
+    <TextView
+        android:id="@+id/gender_female"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="21dp"
+        android:gravity="center_vertical"
+        android:text="女"
+        android:textColor="@color/product_detail_common"
+        android:textSize="14sp"/>
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdentityActivity"
+    android:background="#fff4f4f4"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_identity"
+        style="@style/toolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/angle_right"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            style="@style/MajorTitleStyle"
+            android:text="选择身份" />
+    </android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="#ffffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_identity">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/identity_tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="22dp"
+        android:text="请选择您的身份"
+        android:textColor="#ff1a1a1a"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="54dp"
+        android:text="我们会对每种身份设定不同的产品功能"
+        android:textColor="#ffa4a4a4"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@mipmap/select_identity_bg" />
+
+    <ImageButton
+        android:id="@+id/identity_patient_ib"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/identity_shape_unselect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" >
+
+    </ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="我是患者或患者家属"
+        android:textColor="#ff3cc7ea"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/identity_patient_ib"
+        app:layout_constraintTop_toTopOf="@+id/identity_patient_ib" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="46dp"
+        android:text="我需要获得其他病友帮助和分享经验 "
+        android:textColor="#ff1a1a1a"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/identity_patient_ib"
+        app:layout_constraintTop_toTopOf="@+id/identity_patient_ib" />
+
+    <ImageButton
+        android:id="@+id/identity_doctor_ib"
+        android:layout_width="match_parent"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/identity_shape_unselect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/identity_patient_ib" />
+
+    <TextView
+        android:layout_width="156dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:text="我是医生或研究者 "
+        android:textColor="#ff3cc7ea"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/identity_doctor_ib"
+        app:layout_constraintTop_toTopOf="@+id/identity_doctor_ib" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="46dp"
+        android:text="我会提供关于各类疾病的专业知识 "
+        android:textColor="#ff1a1a1a"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/identity_doctor_ib"
+        app:layout_constraintTop_toTopOf="@+id/identity_doctor_ib" />
+
+    <ImageView
+        android:id="@+id/identity_patient_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/identity_patient_ib"
+        app:layout_constraintTop_toTopOf="@+id/identity_patient_ib"
+        app:srcCompat="@mipmap/radio_group_unselect" />
+
+    <ImageView
+        android:id="@+id/identity_doctor_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        app:layout_constraintEnd_toEndOf="@+id/identity_doctor_ib"
+        app:layout_constraintTop_toTopOf="@+id/identity_doctor_ib"
+        app:srcCompat="@mipmap/radio_group_unselect" />
+
+    <Button
+        android:id="@+id/identity_btn"
+        android:layout_width="326dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/rectangle_btn_shape"
+        android:text="下一步"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frg_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.github.mmin18.widget.RealtimeBlurView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:visibility="visible"/>
+
+        <RadioGroup android:id="@+id/rgroup" android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="horizontal"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="#00ffffff">
+
+            <RadioButton android:id="@+id/rbtn_1" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/sel_home"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="首页"
+                android:textColor="@drawable/sel_text"
+                android:textSize="9sp"/>
+
+            <RadioButton android:id="@+id/rbtn_2" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/sel_community"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="社区"
+                android:textColor="@drawable/sel_text"
+                android:textSize="9sp"/>
+
+            <RadioButton android:id="@+id/rbtn_3" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/sel_mine"
+                android:drawablePadding="2dp"
+                android:gravity="center"
+                android:text="个人"
+                android:textColor="@drawable/sel_text"
+                android:textSize="9sp"/>
+
+
+        </RadioGroup>
+
+    </FrameLayout>
+
+
+
+</FrameLayout>

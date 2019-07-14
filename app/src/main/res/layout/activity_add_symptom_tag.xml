@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddSymptomTagActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_add_symptom_tag"
+        style="@style/toolbarStyle"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:navigationIcon="@mipmap/angle_right">
+        <TextView
+            android:id="@+id/toolbar_add_symptom_tag_title"
+            style="@style/MajorTitleStyle"
+            android:text="添加症状" />
+        <TextView
+            android:id="@+id/add_symptom_tag_next"
+            style="@style/rightTitleStyle"
+            android:text="保存"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:drawableLeft="@mipmap/tips"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:text="为了吸引更多患者来查看您的病历，请仔细完整的填写治疗和护理经验。"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <com.example.zhangjack.wanzhongyixin.widget.FlowLayout
+                android:id="@+id/add_symptom_addtag_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="6dp"
+                android:background="@color/white">
+
+                <EditText
+                    android:id="@+id/add_symptom_add_edit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/flag_edit"
+                    android:hint="添加症状"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:textColor="#000000"
+                    android:textSize="13sp" />
+            </com.example.zhangjack.wanzhongyixin.widget.FlowLayout>
+        </LinearLayout>
+
+        <View style="@style/GrayPartingLineStyle" />
+
+        <com.example.zhangjack.wanzhongyixin.widget.FlowLayout
+            android:id="@+id/add_symptom_tag_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp">
+
+        </com.example.zhangjack.wanzhongyixin.widget.FlowLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

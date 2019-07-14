@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMedicalRecordActivity"
+    android:background="#ffffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_my_medical_record"
+        style="@style/toolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/angle_right"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_edit_personal_information_title"
+            style="@style/MajorTitleStyle"
+            android:text="我的病历" />
+
+        <TextView
+            android:id="@+id/edit_personal_information_next"
+            style="@style/rightTitleStyle"
+            android:text="保存" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/edit_personal_information_line1"
+        style="@style/GrayPartingLineStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/edit_personal_information_title"/>
+
+</android.support.constraint.ConstraintLayout>

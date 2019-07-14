@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="10dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/add_gray"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:background="@drawable/dotted_box"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</selector>

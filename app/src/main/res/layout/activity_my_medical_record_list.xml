@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyMedicalRecordListActivity"
+    android:background="@color/backgroundColor"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_my_medical_record_list"
+        style="@style/toolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/angle_right"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_my_medical_record_list_title"
+            style="@style/MajorTitleStyle"
+            android:text="我的病历" />
+
+        <TextView
+            android:id="@+id/my_medical_record_list_next"
+            style="@style/rightTitleStyle"
+            android:text="编辑" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/my_medical_record_list_constraintLayout_1"
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_my_medical_record_list">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/my_medical_record_list_constraintLayout_1_btn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/medical_record_shape" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginBottom="8dp"
+            android:src="@mipmap/my_medical_record_bg"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout3" />
+
+        <TextView
+            android:id="@+id/my_medical_record_list_constraintLayout_1_medical_name"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="29dp"
+            android:layout_marginLeft="29dp"
+            android:layout_marginTop="26dp"
+            android:text="病历1 · 鱼鳞病 "
+            android:textColor="#ff30bdec"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@+id/my_medical_record_list_constraintLayout_1"
+            app:layout_constraintTop_toTopOf="@+id/my_medical_record_list_constraintLayout_1" />
+
+        <TextView
+            android:id="@+id/my_medical_record_list_constraintLayout_1_medical_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="1dp"
+            android:text="航喵的鱼鳞病报告"
+            android:textColor="#ff1a1a1a"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="@+id/my_medical_record_list_constraintLayout_1_medical_name"
+            app:layout_constraintTop_toBottomOf="@+id/my_medical_record_list_constraintLayout_1_medical_name" />
+
+        <TextView
+            android:layout_width="163dp"
+            android:layout_height="16dp"
+            android:layout_marginTop="7dp"
+            android:text="4,304赞同 · 180有用 · 12评论"
+            android:textColor="#ff999999"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="@+id/my_medical_record_list_constraintLayout_1_medical_name_title"
+            app:layout_constraintTop_toBottomOf="@+id/my_medical_record_list_constraintLayout_1_medical_name_title" />
+
+        <TextView
+            android:id="@+id/my_medical_record_list_constraintLayout_1_price"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:text="¥ 120"
+            android:textColor="#ff1a1a1a"
+            android:textSize="17sp"
+            app:layout_constraintEnd_toEndOf="@+id/my_medical_record_list_constraintLayout_1"
+            app:layout_constraintTop_toTopOf="@+id/my_medical_record_list_constraintLayout_1_medical_name_title" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_marginTop="1dp"
+            android:text="收益 ¥109"
+            android:textColor="#ffec4030"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="@+id/my_medical_record_list_constraintLayout_1_price"
+            app:layout_constraintTop_toBottomOf="@+id/my_medical_record_list_constraintLayout_1_price" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/my_medical_record_list_constraintLayout_add_medical"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/medical_record_add_shape"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/my_medical_record_list_constraintLayout_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="33dp"
+            android:drawableLeft="@mipmap/add_gray"
+            android:drawablePadding="5dp"
+            android:text="添加病历"
+            android:gravity="center_vertical"
+            android:textColor="#ff7f7f7f"
+            android:textSize="17sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:src="@mipmap/my_medical_record_gray_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

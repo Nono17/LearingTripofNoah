@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F4F4"
+    android:orientation="vertical">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        android:padding="10dp">
+
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="个人中心"
+            android:textColor="#fff"
+            android:textSize="16sp"/>
+
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_alignParentRight="true" android:layout_centerVertical="true"
+            android:src="@mipmap/ic_setting"/>
+
+    </RelativeLayout>
+
+    <ScrollView android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_info"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3"
+                        android:textColor="#FF383838"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的病历"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+                <View android:layout_width="1dp" android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                    android:background="#FFC8C8C8"/>
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="22"
+                        android:textColor="#FF383838"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的创作"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <View android:layout_width="1dp" android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                    android:background="#FFC8C8C8"/>
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="63"
+                        android:textColor="#FF383838"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的关注"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+
+                <View android:layout_width="1dp" android:layout_height="match_parent"
+                    android:layout_marginTop="5dp" android:layout_marginBottom="5dp"
+                    android:background="#FFC8C8C8"/>
+
+                <LinearLayout android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="49"
+                        android:textColor="#FF383838"
+                        android:textSize="20sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的收藏"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_wallet"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="我的钱包"
+                    android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_my_message"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="我的消息"
+                    android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_purchase_record"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="购买记录"
+                    android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableTop="@mipmap/ic_review"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:text="邀您评审"
+                    android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="回答问题"
+                        android:textColor="#1A1A1A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多问题"
+                        android:textColor="#2FC6E8"
+                        android:textSize="13sp"/>
+
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#FFDEDEDE"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/frame_circle"
+                    android:orientation="vertical"
+                    android:padding="12dp">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="鱼鳞病患者的饮食有哪些需要注意的地方"
+                        android:textColor="#1A1A1A"
+                        android:textSize="16sp"
+                        android:textStyle="bold"/>
+
+                    <LinearLayout android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="14dp"
+                        android:orientation="horizontal">
+
+                        <TextView android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="197 人关注"
+                            android:textColor="#FF979797"
+                            android:textSize="14sp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/frame_m1"
+                            android:drawableLeft="@mipmap/ic_invisible"
+                            android:drawablePadding="2dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="2dp"
+                            android:text="忽略"
+                            android:textColor="#FF979797"
+                            android:textSize="13sp"/>
+
+                        <TextView android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="16dp"
+                            android:background="@drawable/frame_m2"
+                            android:drawableLeft="@mipmap/ic_edit_blue"
+                            android:drawablePadding="2dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="2dp"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="2dp"
+                            android:text="回答"
+                            android:textColor="#FF28BEDE"
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="我的健康数据"
+                        android:textColor="#1A1A1A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@mipmap/ic_double_return"
+                        android:drawablePadding="8dp"
+                        android:text="去更新"
+                        android:textColor="#2FC6E8"
+                        android:textSize="13sp"/>
+
+
+                </LinearLayout>
+
+                <View android:layout_width="match_parent" android:layout_height="1dp"
+                    android:background="#FFDEDEDE"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup android:id="@+id/rgroup" android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:layout_marginTop="8dp"
+                        android:background="#ffffff"
+                        android:orientation="horizontal">
+
+                        <RadioButton android:id="@+id/rbtn_1" android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:checked="true"
+                            android:drawableBottom="@drawable/sel_mine_2"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="心情数据"
+                            android:textColor="@drawable/sel_text3"
+                            android:textSize="13sp"/>
+
+                        <RadioButton android:id="@+id/rbtn_2" android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/sel_mine_2"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="治疗方式"
+                            android:textColor="@drawable/sel_text3"
+                            android:textSize="13sp"/>
+
+                        <RadioButton android:id="@+id/rbtn_3" android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/sel_mine_2"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="症状走势"
+                            android:textColor="@drawable/sel_text3"
+                            android:textSize="13sp"/>
+
+                        <RadioButton android:id="@+id/rbtn_4" android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:drawableBottom="@drawable/sel_mine_2"
+                            android:drawablePadding="8dp"
+                            android:gravity="center"
+                            android:text="化验走势"
+                            android:textColor="@drawable/sel_text3"
+                            android:textSize="13sp"/>
+
+
+                    </RadioGroup>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:layout_marginLeft="6dp" android:layout_marginRight="6dp"
+                        android:background="#FF3DCAE8"/>
+
+                    <ImageView android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chart"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="17dp"
+                        android:text="医路小贴士："
+                        android:textColor="#FF1A1A1A"
+                        android:textSize="13sp"
+                        android:textStyle="bold"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_height="wrap_content"
+                        android:text="\t\t最近心情起伏略大，有些情绪不稳定的现象，您可以结合症状和化验结果分析一下总的病情趋势，以便作为您去医院问诊的参考。也建议您多多在社区与病友们互动哦~"
+                        android:textColor="#FF424242"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

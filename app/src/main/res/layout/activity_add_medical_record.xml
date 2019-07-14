@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    android:id="@+id/add_medical_record_parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicalRecord"
+    android:background="#ffffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_add_medical_record"
+        style="@style/toolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/angle_right"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_add_medical_record_title"
+            style="@style/MajorTitleStyle"
+            android:text="添加病历" />
+
+        <TextView
+            android:id="@+id/add_medical_next"
+            style="@style/rightTitleStyle"
+            android:text="下一步" />
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/add_medical_line1"
+        style="@style/GrayPartingLineStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/add_medical_title"/>
+    <LinearLayout
+        android:id="@+id/add_medical_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical"
+        android:background="#00000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_add_medical_record">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            >
+            <TextView
+                android:id="@+id/add_medical_diagnostic_information_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="诊断信息"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                />
+            <View
+                android:id="@+id/add_medical_diagnostic_information_view"
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select_line_shape"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="#00000000"
+            >
+            <TextView
+                android:id="@+id/add_medical_treatment_process_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="治疗过程"
+                android:textColor="#000000"
+                android:textSize="13sp"
+                />
+            <View
+                android:id="@+id/add_medical_treatment_process_view"
+                android:layout_width="80dp"
+                android:layout_height="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/select_line_shape"
+                android:visibility="invisible"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <com.example.zhangjack.wanzhongyixin.MyCustomScrollView
+        android:id="@+id/add_medical_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_medical_line1"
+        app:layout_constraintVertical_bias="0.0">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/add_medical_title_diagnostic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:hint="XX的XX病历"
+                        android:layout_marginLeft="17dp"
+                        android:layout_marginRight="19dp"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:textSize="15sp"
+                        android:singleLine="true"
+                        android:textColor="@color/MedicalRecordText"/>
+                </LinearLayout>
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_select_medical_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="选择所患疾病"/>
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_add_symptom_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="添加症状"/>
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+
+                <com.example.zhangjack.wanzhongyixin.widget.FlowLayout
+                    android:id="@+id/add_medical_tag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp">
+                </com.example.zhangjack.wanzhongyixin.widget.FlowLayout>
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_symptom_pic_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="上传症状照片（看不出症状的可以不上传）"
+                    android:paddingRight="16dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="10dp">
+                    <com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView
+                        android:id="@+id/add_medical_symptom_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView>
+                </LinearLayout>
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp">
+                    <TextView
+                        android:id="@+id/add_medical_diagnostic_time_tv"
+                        style="@style/AddMedicalBackGroundStyle2"
+                        android:drawableLeft="@mipmap/add"
+                        android:text="确诊时间"/>
+                </FrameLayout>
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_diagnostic_pic_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="上传医院检查或诊断报告"
+                    android:paddingRight="16dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="10dp">
+                    <com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView
+                        android:id="@+id/add_medical_diagnostic_pic_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView>
+                </LinearLayout>
+
+
+
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="129dp">
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="简述医生诊断结果，例如患XXX疾病"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginRight="19dp"
+                    android:layout_marginTop="11dp"
+                    android:background="@null"
+                    android:imeOptions="actionDone"
+                    android:textSize="13sp"
+                    android:textColor="@color/MedicalRecordText"/>
+            </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+            <LinearLayout
+                android:id="@+id/add_medical_title_treatment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    style="@style/GrayPartingLineStyle"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="59dp"
+                    android:drawableLeft="@mipmap/tips"
+                    android:text="请细致的填写自己的治疗过程，包括有效果和无效果的治疗过程，您填写的越细致，对病友的帮助越大。"
+                    android:paddingLeft="13dp"
+                    android:paddingRight="13dp"
+                    android:drawablePadding="7dp"
+                    android:gravity="center_vertical"
+                    android:textSize="13sp"/>
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="18dp"
+                        android:text="治疗过程"
+                        android:paddingRight="16dp"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/product_detail_common"/>
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="请详细填写吃了什么药、吃药的剂量、做了什么手术等等，并附上相关图片"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="19dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:textSize="13sp"
+                        android:textColor="@color/MedicalRecordText"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="上传治疗过程相关药物、手术等图片"
+                    android:paddingRight="16dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="10dp">
+                    <com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView
+                        android:id="@+id/add_medical_treatment_process_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView>
+                </LinearLayout>
+
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_treatment_time_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="开始治疗的时间"/>
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_treatment_end_time_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="结束治疗的时间"/>
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="123dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:hint="简述经过治疗后的效果如何"
+                        android:layout_marginLeft="19dp"
+                        android:layout_marginRight="17dp"
+                        android:layout_marginTop="11dp"
+                        android:background="@null"
+                        android:imeOptions="actionDone"
+                        android:textSize="13sp"
+                        android:textColor="@color/MedicalRecordText"/>
+                </LinearLayout>
+
+                <View
+                    style="@style/GrayPartingLineStyle"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"/>
+                <TextView
+                    android:id="@+id/add_medical_treatment_effect_pic_tv"
+                    style="@style/AddMedicalBackGroundStyle2"
+                    android:drawableLeft="@mipmap/add"
+                    android:text="上传治疗后症状照片（看不出症状的可以不上传）"
+                    android:paddingRight="16dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="38dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_marginBottom="10dp">
+                    <com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView
+                        android:id="@+id/add_medical_treatment_process_symptom_gridview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </com.example.zhangjack.wanzhongyixin.gridimageview.GridImageView>
+                </LinearLayout>
+                <View
+                    style="@style/GrayPartingLineStyle"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </com.example.zhangjack.wanzhongyixin.MyCustomScrollView>
+
+</android.support.constraint.ConstraintLayout>

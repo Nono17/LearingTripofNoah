@@ -1,0 +1,180 @@
+<resources>
+
+    <style name="myToolbarNavigationButtonStyle" parent="@style/Widget.AppCompat.Toolbar.Button.Navigation">
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">13dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="toolbarNavigationButtonStyle">@style/myToolbarNavigationButtonStyle</item>
+    </style>
+
+    <style name="AppTheme.Main" parent="AppTheme" />
+
+    <!-- toolbar一些共同属性 -->
+    <style name="toolbarStyle">
+        <item name="android:layout_width">match_parent</item>
+        <!-- <item name="android:layout_height">?attr/actionBarSize</item> -->
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/toolbar_bg</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+    </style>
+
+
+    <!-- 选择框中的背景通用的格式 start-->
+    <style name="SelectBackGroundStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">14dp</item>
+        <item name="android:paddingRight">11dp</item>
+        <item name="android:textColor">@color/product_detail_common</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- end~ -->
+
+    <!-- 选择框中的背景通用的格式V2版本 start-->
+    <style name="AddMedicalBackGroundStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawablePadding">4dp</item>
+        <item name="android:drawableRight">@mipmap/right</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">11dp</item>
+        <item name="android:textColor">@color/product_detail_common</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- end~ -->
+
+    <!-- 选择框中的背景通用的格式V2版本 start-->
+    <style name="AddMedicalBackGroundStyle2">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">42dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">18dp</item>
+        <item name="android:paddingRight">11dp</item>
+        <item name="android:textColor">@color/product_detail_common</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+    <!-- end~ -->
+
+    <!-- 选择框中的背景通用的格式 start-->
+    <style name="SelectStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">26dp</item>
+        <item name="android:textColor">@color/product_detail_common_gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- end~ -->
+
+    <!-- 选择框中的背景通用的格式 start-->
+    <style name="AddMedicalSelectStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">41dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingRight">26dp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textColor">@color/product_detail_common_gray</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+    <!-- end~ -->
+
+    <!--BaseDialog样式-->
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--Dialog进入退出动画-->
+    <style name="EnterExitAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/exit_anim</item>
+    </style>
+
+    <!--toolbar页面上方标题栏正中文字样式-->
+    <style name="MajorTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <!--toolbar页面上方标题栏右边文字样式-->
+    <style name="rightTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:paddingRight">13dp</item>
+    </style>
+
+    <!--toolbar页面上方标题栏右边文字样式-->
+    <style name="leftTitleStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_gravity">left</item>
+    </style>
+
+    <!--灰色分隔线样式-->
+    <style name="GrayPartingLineStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#ffdedede</item>
+    </style>
+
+    <!--标签样式-->
+    <style name="text_flag_01">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:background">@drawable/flag_01</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="MedicalRecordTitleText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:drawablePadding">7dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableLeft">@drawable/point_blue</item>
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:textColor">@color/product_detail_common</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

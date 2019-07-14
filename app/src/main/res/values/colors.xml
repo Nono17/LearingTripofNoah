@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff37c3ea</color>
+    <color name="colorPrimaryDark">#ff37c3ea</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#ffffff</color>
+    <color name="product_detail_common">#1A1A1A</color>
+    <color name="product_detail_common_gray">#FF979797</color>
+    <color name="gray_parting_line">#ffdedede</color>
+    <color name="input_box_and_dashed_line">#B7B7B7</color>
+    <color name="unchecked_text">#FF919191</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorRadio">#FF3BC3EB</color>
+    <color name="backgroundColor">#FFF4F4F4</color>
+    <color name="chartBackground">#FFF5F5F5</color>
+    <color name="contentColor">#FF444444</color>
+    <color name="emphasis_text">#FF3DCAE8</color>
+    <color name="MedicalRecordText">#FF383838</color>
+    <color name="MedicalRecordFollowButton">#FF3CC9E8</color>
+    <color name="UncheckedButtonText">#FF999999</color>
+    <color name="SignInText">#FF20BBED</color>
+    <color name="SignInText2">#FF2DBAEC</color>
+    <color name="SignInBackgroud">#FFF9F9F9</color>
+    <!-- 标签用颜色 start-->
+    <color name="color_tag_text_normal">#000000</color>
+    <color name="color_tag_text_activated">#00ff00</color>
+    <color name="color_addtag_text_normal">#00ff00</color>
+    <color name="color_addtag_text_activated">#ffffff</color>
+    <!-- end~ -->
+</resources>

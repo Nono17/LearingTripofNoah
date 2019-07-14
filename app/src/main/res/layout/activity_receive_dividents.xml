@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiveDividentsActivity"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_receive_dividents"
+        style="@style/toolbarStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@mipmap/angle_right"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:id="@+id/toolbar_receive_dividents_title"
+            style="@style/MajorTitleStyle"
+            android:text="分红设置" />
+
+        <TextView
+            android:id="@+id/receive_dividents_next"
+            style="@style/rightTitleStyle"
+            android:text="分红细则" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_receive_dividents">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="其他患者查看您的病历需要支付多少钱？"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/point_blue"
+            android:paddingLeft="13dp"
+            android:textColor="@color/product_detail_common"
+            android:textSize="15sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/rg">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="¥ 1"
+                    android:id="@+id/rb1"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:textColor="@color/contentColor"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text="¥ 5"
+                    android:id="@+id/rb2"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:textColor="@color/contentColor"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text="¥ 10"
+                    android:id="@+id/rb3"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@color/contentColor"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="30dp"
+                    android:text="¥ 20"
+                    android:id="@+id/rb4"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:textColor="@color/contentColor"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+
+            <RadioButton
+                android:id="@+id/rb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:buttonTint="@color/colorRadio"
+                android:text="手动输入"
+                android:textSize="14sp"
+                android:textColor="@color/contentColor"/>
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/contentColor"
+                android:text="(最高200元)"/>
+            <EditText
+                android:layout_marginLeft="6dp"
+                android:layout_width="52dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/contentColor"
+                android:background="@drawable/edit_shape_receive_dividents"
+                android:paddingLeft="4dp"
+                android:gravity="center"
+                android:singleLine="true"/>
+
+            <TextView
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@color/contentColor"
+                android:text="元"/>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+            <RadioButton
+                android:id="@+id/rb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorRadio"
+                android:text="免费"
+                android:textSize="14sp"
+                android:textColor="@color/contentColor"/>
+            <TextView
+                android:layout_marginTop="6dp"
+                android:layout_marginLeft="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="         （如果您设置免费，且病历填写完整，就可以免费看别人的病历）"
+                android:textSize="14sp"
+                android:textColor="@color/contentColor"/>
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="其他患者支付的这笔钱您愿意给平台分多少比例？"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/point_blue"
+            android:paddingLeft="13dp"
+            android:textColor="@color/product_detail_common"
+            android:textSize="15sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="22dp"
+            android:layout_marginRight="22dp">
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/rg11">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10%，这是我的劳动成果，平台能活下去就行了"
+                    android:id="@+id/rb10"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:textColor="@color/contentColor"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="25%，希望这个平台能发展壮大"
+                    android:id="@+id/rb12"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:checked="true"
+                    android:textColor="@color/contentColor"
+                    android:singleLine="true"/>
+
+                <RadioButton
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50%，这个平台的理念非常好，我大力支持"
+                    android:id="@+id/rb13"
+                    android:buttonTint="@color/colorRadio"
+                    android:textSize="14sp"
+                    android:textColor="@color/contentColor"
+                    android:singleLine="true"/>
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/receive_dividents_btn"
+        android:layout_width="326dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/rectangle_btn_shape"
+        android:text="发布"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

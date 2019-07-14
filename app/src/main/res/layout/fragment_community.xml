@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:background="@drawable/toolbar_bg"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <EditText android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/community_search_shape"
+                android:gravity="center"
+                android:hint="搜索您感兴趣的项目"
+                android:padding="8dp"
+                android:textColorHint="#A0A0A0"
+                android:textSize="14sp"
+                android:enabled="false"/>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@mipmap/ic_edit"
+                android:drawableTint="#fff"
+                android:drawablePadding="5dp"
+                android:text="提问"
+                android:textColor="#fff"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rgroup"
+            android:layout_width="match_parent"
+            android:layout_height="41dp"
+            android:paddingTop="14dp"
+            android:orientation="horizontal">
+
+            <RadioButton android:id="@+id/rbtn_1" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/sel_community_navigation"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="@drawable/sel_text_navigation"
+                android:textSize="14sp"/>
+
+            <RadioButton android:id="@+id/rbtn_2" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableBottom="@drawable/sel_community_navigation"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="推荐"
+                android:textColor="@drawable/sel_text_navigation"
+                android:textSize="14sp"/>
+
+            <RadioButton android:id="@+id/rbtn_3" android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:drawableBottom="@drawable/sel_community_navigation"
+                android:drawablePadding="8dp"
+                android:gravity="center"
+                android:text="学知识"
+                android:textColor="@drawable/sel_text_navigation"
+                android:textSize="14sp"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/frg_content" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1"/>
+
+
+</LinearLayout>

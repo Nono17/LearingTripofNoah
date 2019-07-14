@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF4F4F4">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="8dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableRight="@mipmap/ic_double_return"
+                android:drawablePadding="8dp"
+                android:layout_gravity="center"
+                android:text="查看我的全部课程"
+                android:textColor="@color/emphasis_text"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView android:layout_width="109dp" android:layout_height="109dp"
+                android:src="@drawable/ic_c1"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="9dp"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="白化病的护理方法"
+                        android:textColor="#FF1A1A1A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_video"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_audio"/>
+
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="张震 · 北京协和医院皮肤科教授" android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="系列课程" android:textColor="#FF3CC7EA"
+                    android:textSize="13sp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="13课时 113万次学习"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView android:layout_width="109dp" android:layout_height="109dp"
+                android:src="@drawable/ic_c2"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="9dp"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="苯酮尿症的症状与确诊"
+                        android:textColor="#FF1A1A1A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_article"/>
+
+
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="每天一课" android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="医路小课堂" android:textColor="#FF3CC7EA"
+                    android:textSize="13sp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20课时 450万次学习"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:drawableLeft="@mipmap/ic_delete"
+            android:drawablePadding="2dp"
+            android:text="清空学习记录" android:textColor="#FFA3A3A3"
+            android:textSize="12sp"/>
+
+
+        <TextView android:layout_width="match_parent" android:layout_height="40dp"
+            android:background="#fff"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:text="为您推荐"
+            android:textColor="#FF1A1A1A" android:textSize="15sp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView android:layout_width="109dp" android:layout_height="109dp"
+                android:src="@drawable/ic_c3"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="9dp"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="肌萎缩侧索硬化并不可怕"
+                        android:textColor="#FF1A1A1A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_video"/>
+
+
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="李勇 · 华中科技大学教授" android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="医路护理" android:textColor="#FF3CC7EA"
+                    android:textSize="13sp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="10课时 193万次学习"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="付费"
+                        android:textColor="#FFEF0028"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:layout_marginTop="5dp"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <ImageView android:layout_width="109dp" android:layout_height="109dp"
+                android:src="@drawable/ic_c4"/>
+
+            <LinearLayout android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="9dp"
+                android:orientation="vertical">
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="鱼鳞病的发病原理"
+                        android:textColor="#FF1A1A1A"
+                        android:textSize="15sp"
+                        android:textStyle="bold"/>
+
+                    <ImageView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:src="@mipmap/ic_video"/>
+
+
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="文静 · 鱼鳞病专项研究专家" android:textColor="#FF444444"
+                    android:textSize="12sp"/>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="医路护理" android:textColor="#FF3CC7EA"
+                    android:textSize="13sp"/>
+
+                <LinearLayout android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <TextView android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="31课时 43万次学习"
+                        android:textColor="#FF444444"
+                        android:textSize="12sp"/>
+
+                    <TextView android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="付费"
+                        android:textColor="#FFEF0028"
+                        android:textSize="12sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

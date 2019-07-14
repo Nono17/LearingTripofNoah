@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/SignInBackgroud">
+
+    <TextView
+        android:id="@+id/register_title"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_marginTop="113dp"
+        android:gravity="center"
+        android:text="注册账号"
+        android:textStyle="bold"
+        android:textColor="@color/product_detail_common"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/register_tips_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="6dp"
+        android:text="登录注册表示同意"
+        android:textColor="@color/product_detail_common"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="6dp"
+        android:text="万众医学使用协议、隐私政策"
+        android:textColor="@color/SignInText"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/register_tips_tv"
+        app:layout_constraintTop_toBottomOf="@+id/register_title" />
+
+    <LinearLayout
+        android:id="@+id/register_tips_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/sign_in_box"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_tips_tv">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="+86"
+                android:textColor="@color/product_detail_common"
+                android:textSize="15sp" />
+
+            <View
+                style="@style/GrayPartingLineStyle"
+                android:layout_width="1dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="输入手机号码"
+                android:imeOptions="actionDone"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="@color/product_detail_common"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View style="@style/GrayPartingLineStyle" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="验证码"
+                android:imeOptions="actionDone"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="@color/product_detail_common"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="获取验证码"
+                android:textColor="@color/SignInText"
+                android:textSize="14sp"
+                android:layout_gravity="right"
+                android:layout_marginRight="18dp"
+                android:gravity="center_vertical"/>
+
+        </FrameLayout>
+
+        <View style="@style/GrayPartingLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="输入密码"
+                android:imeOptions="actionDone"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="@color/product_detail_common"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <View style="@style/GrayPartingLineStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="43dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="确认密码"
+                android:imeOptions="actionDone"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="@color/product_detail_common"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="36dp"
+        android:background="@drawable/rectangle_btn_shape"
+        android:text="注册"
+        android:textColor="#ffffffff"
+        android:textSize="16sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_tips_linearLayout" />
+
+
+
+
+
+
+
+
+
+    <ImageView
+        android:id="@+id/register_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/close" />
+
+
+</android.support.constraint.ConstraintLayout>

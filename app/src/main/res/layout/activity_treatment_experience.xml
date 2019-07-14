@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TreatmentExperienceActivity"
+    android:background="#ffffffff"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_treatment_experience"
+        style="@style/toolbarStyle"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+        <TextView
+            android:id="@+id/toolbar_treatment_experience_back"
+            style="@style/leftTitleStyle"
+            android:text="上一步" />
+        <TextView
+            android:id="@+id/toolbar_treatment_experience_title"
+            style="@style/MajorTitleStyle"
+            android:text="添加病历" />
+        <TextView
+            android:id="@+id/toolbar_treatment_experience_next"
+            style="@style/rightTitleStyle"
+            android:text="下一步"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:drawableLeft="@mipmap/tips"
+                android:drawablePadding="7dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="13dp"
+                android:paddingRight="13dp"
+                android:text="为了吸引更多患者来查看您的病历，请仔细完整的填写治疗和护理经验。"
+                android:textSize="13sp" />
+
+            <View
+                style="@style/GrayPartingLineStyle"
+                android:layout_marginStart="17dp"
+                android:layout_marginLeft="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="17dp"
+                android:layout_marginTop="11dp"
+                android:background="@null"
+                android:hint="填写治疗和护理经验"
+                android:imeOptions="actionDone"
+                android:textSize="15sp"
+                android:textColor="@color/MedicalRecordText"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
