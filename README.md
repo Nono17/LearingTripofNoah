@@ -28,6 +28,7 @@
 5. Merge k Sorted Lists（合并 k 个排序链表）
 - 英文版：https://leetcode.com/problems/merge-k-sorted-lists/
 - 中文版：https://leetcode-cn.com/problems/merge-k-sorted-lists/
+### Task2（8.5-8.9）
 #### 3.栈
 1. 用数组实现一个顺序栈
 2. 用链表实现一个链式栈
@@ -62,5 +63,80 @@
 6. Climbing Stairs（爬楼梯）
 - 英文版：https://leetcode.com/problems/climbing-stairs/
 - 中文版：https://leetcode-cn.com/problems/climbing-stairs/
+### Task3（8.9-8.12）
+#### 6. 排序
+1. 实现归并序、快速排序、插入排序、冒泡排序、选择排序、堆排序
+2. 完成leetcode上的返回滑动窗口中的最大值(239)
+3. 编程实现 O(n) 时间复杂度内找到一组数据的第 K 大元素
+#### 7. 二分查找
+1. 实现一个有序数组的二分查找算法
+2. 实现模糊二分查找算法（比如大于等于给定值的第一个元素）
+#### 附加题
+1. Sliding Window Maximum（滑动窗口最大值）
+- 英文版：https://leetcode.com/problems/sliding-window-maximum/
+- 中文版：https://leetcode-cn.com/problems/sliding-window-maximum/
+2. Sqrt(x) （x 的平方根）
+- 英文版：https://leetcode.com/problems/sqrtx/
+- 中文版：https://leetcode-cn.com/problems/sqrtx/
+### Task4（8.12-8.16）
+#### 8.散列表（哈希表）
+1. 实现一个基于链表法解决冲突问题的散列表
+2. 实现一个 LRU 缓存淘汰算法
+#### 9.字符串
+1. 实现一个字符集，只包含 a～z 这 26 个英文字母的 Trie 树
+2. 实现朴素的字符串匹配算法
+#### 附加题
+1. 两数之和
+- 英文版：https://leetcode.com/problems/two-sum/
+- 中文版：https://leetcode-cn.com/problems/two-sum/
+2. Reverse String （反转字符串）
+- 英文版：https://leetcode.com/problems/reverse-string/
+- 中文版：https://leetcode-cn.com/problems/reverse-string/
+3. Reverse Words in a String（翻转字符串里的单词）
+- 英文版：https://leetcode.com/problems/reverse-words-in-a-string/
+- 中文版：https://leetcode-cn.com/problems/reverse-words-in-a-string/
+4. String to Integer (atoi)（字符串转换整数 (atoi)）[作为可选]
+- 英文版：https://leetcode.com/problems/string-to-integer-atoi/
+- 中文版：https://leetcode-cn.com/problems/string-to-integer-atoi/
 
 ## 李宏毅机器学习课程
+### P1 机器学习介绍
+### P2 为什么要学习机器学习
+### P3 回归
+### P4 回归-演示
+### P5 误差从哪来？
+### P6 梯度下降
+### P7 梯度下降（用AOE演示）
+### P8 梯度下降（用Minecraft演示）
+### P9 作业1-PM2.5预测
+### P10 概率分类模型
+### P11 logistic回归
+### P12 作业2-赢家还是输家
+### P13 深度学习简介
+### P14 反向传播
+### P15 深度学习初试
+### P16 Keras2.0
+### P17 Keras演示
+### P18 深度学习技巧
+### P19 Keras演示2
+### P20 Tensorflow 实现 Fizz Buzz
+### P21 卷积神经网络
+### P22 为什么要“深度”学习？
+### P23 半监督学习
+### P24 无监督学习-线性降维
+### P25 无监督学习-词嵌入
+### P26 无监督学习-领域嵌入
+### P27 无监督学习-深度自编码器
+### P28 无监督学习-深度生成模型I
+### P29 无监督学习-深度生成模型II
+### P30 迁移学习
+### P31 支持向量机
+### P32 结构化学习-介绍
+### P33 结构化学习-线性模型
+### P34 结构化学习-结构化支持向量机
+### P35 结构化学习-序列标注
+### P36 循环神经网络I
+### P37 循环神经网络II
+### P38 集成学习
+### P39 深度强化学习浅析
+### P40 机器学习的下一步
