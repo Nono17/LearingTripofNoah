@@ -122,6 +122,19 @@
 4. Path Sum（路径总和）
 - 英文版：https://leetcode.com/problems/path-sum/
 - 中文版：https://leetcode-cn.com/problems/path-sum/
+### Task6（8.18-8.21）
+#### 12.图
+1. 实现有向图、无向图、有权图、无权图的邻接矩阵和邻接表表示方法
+2. 实现图的深度优先搜索、广度优先搜索实现
+3. Dijkstra 算法实现
+4. 拓扑排序
+#### 附加题
+1. Number of Islands（岛屿的个数）
+- 英文版：https://leetcode.com/problems/number-of-islands/description/
+- 中文版：https://leetcode-cn.com/problems/number-of-islands/description/Valid 
+2. Sudoku（有效的数独）
+- 英文版：https://leetcode.com/problems/valid-sudoku/
+- 中文版：https://leetcode-cn.com/problems/valid-sudoku/
 ## 李宏毅机器学习课程
 ### P1 机器学习介绍
 ### P2 为什么要学习机器学习
